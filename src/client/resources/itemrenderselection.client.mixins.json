@@ -3,7 +3,7 @@
   "package": "com.renschi.irs.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "ItemEntityShadowSuppressorMixin"
+    "BlockEntityRenderDispatcherMixin"
   ],
   "injectors": {
     "defaultRequire": 1
