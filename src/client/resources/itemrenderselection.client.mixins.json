@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.renschi.irs.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ItemEntityShadowSuppressorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

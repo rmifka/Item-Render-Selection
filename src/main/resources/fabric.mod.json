@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "itemrenderselection",
+  "version": "${version}",
+  "name": "ItemRenderSelection",
+  "description": "This mod allows you to enter Regex to hide specific Item Entities",
+  "authors": [
+    "Renschi"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/itemrenderselection/IRS.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.renschi.irs.ItemRenderSelection"
+    ],
+    "client": [
+      "com.renschi.irs.ItemRenderSelectionClient"
+    ],
+    "modmenu": [
+      "com.renschi.irs.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "itemrenderselection.mixins.json",
+    {
+      "config": "itemrenderselection.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.8",
+    "java": ">=21",
+    "fabric-api": "*",
+    "yet_another_config_lib_v3": ">=3.7.1+1.21.6-fabric"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
