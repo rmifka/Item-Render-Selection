@@ -3,10 +3,12 @@
   "package": "com.renschi.irs.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "BlockEntityRenderDispatcherMixin",
-    "EntityTickinMixin"
+    "BlockEntityRenderDispatcherMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "mixins": [
+    "EntityTickinMixin"
+  ]
 }
